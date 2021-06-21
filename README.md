@@ -19,7 +19,7 @@ OPTIONS:
 > 使用示例
 
 ```bash
-fusion-gin-cli new -p test-fusion-gin -m
+fusion-gin-cli new -p test-fusion-gin-admin -m
 ```
 
 ### 生成业务模块
@@ -55,7 +55,6 @@ fusion-gin-cli g -p 包名 -f 配置文件(yaml)
 > 配置文件说明
 
 ```yaml
----
 name: 结构体名称
 comment: 结构体注释说明
 fields:
