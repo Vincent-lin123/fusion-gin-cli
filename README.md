@@ -96,5 +96,5 @@ fields:
 ```
 
 ```bash
-fusion-gin-cli g -p test-fusion-gin -f task.yaml
+fusion-gin-cli g -p test-fusion-gin-admin -f task.yaml
 ```

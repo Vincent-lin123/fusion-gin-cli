@@ -1,0 +1,22 @@
+name: Task
+comment: 任务管理
+modules: schema,model,service,api,mock,router
+fields:
+  - name: Code
+    type: string
+    comment: 任务编号
+    required: true
+    binding_options: ""
+    gorm_options: "size:50;index;"
+  - name: Name
+    type: string
+    comment: 任务名称
+    required: true
+    binding_options: ""
+    gorm_options: "size:50;index;"
+  - name: Memo
+    type: string
+    comment: 任务备注
+    required: false
+    binding_options: ""
+    gorm_options: "size:1024;"
