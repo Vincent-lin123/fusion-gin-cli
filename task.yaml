@@ -1,22 +1,27 @@
-name: Task
-comment: 任务管理
-modules: schema,model,service,api,mock,router
+name: CrmTransRecord
+comment: CRM转换日志
 fields:
-  - name: Code
+  - name: CampaignId
     type: string
-    comment: 任务编号
+    comment: campaign
     required: true
     binding_options: ""
-    gorm_options: "size:50;index;"
-  - name: Name
-    type: string
-    comment: 任务名称
+    gorm_options: "size:36;index;"
+  - name: RunTime
+    type: time.Time
+    comment: 运行时间
     required: true
     binding_options: ""
-    gorm_options: "size:50;index;"
-  - name: Memo
-    type: string
-    comment: 任务备注
-    required: false
+    gorm_options: ""
+  - name: TransRecordTime
+    type: time.Time
+    comment: 数据传输时间点
+    required: true
     binding_options: ""
-    gorm_options: "size:1024;"
+    gorm_options: ""
+  - name: TransNum
+    type: int
+    comment: 转换数量
+    required: true
+    binding_options: ""
+    gorm_options: ""

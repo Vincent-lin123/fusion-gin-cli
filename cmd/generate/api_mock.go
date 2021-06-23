@@ -32,7 +32,7 @@ type {{.Name}} struct {
 // @Success 200 {array} schema.{{.Name}} "查询结果：{list:列表数据,pagination:{current:页索引,pageSize:页大小,total:总数量}}"
 // @Failure 401 {object} schema.ErrorResult "{error:{code:0,message:未授权}}"
 // @Failure 500 {object} schema.ErrorResult "{error:{code:0,message:服务器错误}}"
-// @Router /api/v1/{{.PluralName}} [get]
+// @Router /api/v1/fusion-gin-admin/{{.PluralName}} [get]
 func (a *{{.Name}}) Query(c *gin.Context) {
 }
 
@@ -45,7 +45,7 @@ func (a *{{.Name}}) Query(c *gin.Context) {
 // @Failure 401 {object} schema.ErrorResult "{error:{code:0,message:未授权}}"
 // @Failure 404 {object} schema.ErrorResult "{error:{code:0,message:资源不存在}}"
 // @Failure 500 {object} schema.ErrorResult "{error:{code:0,message:服务器错误}}"
-// @Router /api/v1/{{.PluralName}}/{id} [get]
+// @Router /api/v1/fusion-gin-admin/{{.PluralName}}/{id} [get]
 func (a *{{.Name}}) Get(c *gin.Context) {
 }
 
@@ -58,7 +58,7 @@ func (a *{{.Name}}) Get(c *gin.Context) {
 // @Failure 400 {object} schema.ErrorResult "{error:{code:0,message:无效的请求参数}}"
 // @Failure 401 {object} schema.ErrorResult "{error:{code:0,message:未授权}}"
 // @Failure 500 {object} schema.ErrorResult "{error:{code:0,message:服务器错误}}"
-// @Router /api/v1/{{.PluralName}} [post]
+// @Router /api/v1/fusion-gin-admin/{{.PluralName}} [post]
 func (a *{{.Name}}) Create(c *gin.Context) {
 }
 
@@ -72,7 +72,7 @@ func (a *{{.Name}}) Create(c *gin.Context) {
 // @Failure 400 {object} schema.ErrorResult "{error:{code:0,message:无效的请求参数}}"
 // @Failure 401 {object} schema.ErrorResult "{error:{code:0,message:未授权}}"
 // @Failure 500 {object} schema.ErrorResult "{error:{code:0,message:服务器错误}}"
-// @Router /api/v1/{{.PluralName}}/{id} [put]
+// @Router /api/v1/fusion-gin-admin/{{.PluralName}}/{id} [put]
 func (a *{{.Name}}) Update(c *gin.Context) {
 }
 
@@ -84,7 +84,7 @@ func (a *{{.Name}}) Update(c *gin.Context) {
 // @Success 200 {object} schema.StatusResult "{status:OK}"
 // @Failure 401 {object} schema.ErrorResult "{error:{code:0,message:未授权}}"
 // @Failure 500 {object} schema.ErrorResult "{error:{code:0,message:服务器错误}}"
-// @Router /api/v1/{{.PluralName}}/{id} [delete]
+// @Router /api/v1/fusion-gin-admin/{{.PluralName}}/{id} [delete]
 func (a *{{.Name}}) Delete(c *gin.Context) {
 }
 
